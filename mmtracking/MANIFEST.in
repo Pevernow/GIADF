@@ -1,4 +1,3 @@
-include requirements/*.txt
-include mmtrack/.mim/model-index.yml
-recursive-include mmtrack/.mim/configs *.py *.yml
-recursive-include mmtrack/.mim/tools *.sh *.py
+version https://git-lfs.github.com/spec/v1
+oid sha256:b442372195eefc7d96cec330d8ecac62022bbf976733b8adbd0fdf12368db1e7
+size 165

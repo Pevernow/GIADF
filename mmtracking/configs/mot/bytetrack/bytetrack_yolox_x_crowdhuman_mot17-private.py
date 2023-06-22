@@ -1,6 +1,3 @@
-_base_ = ['./bytetrack_yolox_x_crowdhuman_mot17-private-half.py']
-
-data = dict(
-    test=dict(
-        ann_file='data/MOT17/annotations/test_cocoformat.json',
-        img_prefix='data/MOT17/test'))
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b9bbbf61f120d5230f271d69947bab792b6ebd3658bd2282a4a8a4dcce4eea7
+size 204

@@ -1,8 +1,3 @@
-CONFIG=$1
-GPUS=$2
-PORT=${PORT:-29500}
-
-
-PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
-python -m torch.distributed.launch --nproc_per_node=$GPUS --master_port=$PORT \
-    $(dirname "$0")/sot_siamrpn_param_search.py $CONFIG --launcher pytorch ${@:3}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c7bc74395147039090528bfc8b2b8803e3f7cf94cd7a37f4e234151a117fab1d
+size 254

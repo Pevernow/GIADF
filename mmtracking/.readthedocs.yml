@@ -1,12 +1,3 @@
-version: 2
-
-formats: all
-
-python:
-  version: 3.7
-  install:
-    - requirements: requirements/build.txt
-    - requirements: requirements/docs.txt
-    - requirements: requirements/runtime.txt
-    - requirements: requirements/readthedocs.txt
-    - requirements: requirements/mminstall.txt
+version https://git-lfs.github.com/spec/v1
+oid sha256:4600a5def5c2ff8740c51cf6284b7521901165a7f2e5aca7b71958898ad772b0
+size 298

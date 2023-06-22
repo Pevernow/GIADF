@@ -1,10 +1,3 @@
-_base_ = ['./siamese_rpn_r50_20e_lasot.py']
-
-data_root = 'data/'
-# dataset settings
-data = dict(
-    test=dict(
-        type='TrackingNetDataset',
-        ann_file=data_root +
-        'trackingnet/annotations/trackingnet_test_infos.txt',
-        img_prefix=data_root + 'trackingnet'))
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8780e21d61b99540a4f2f75cb0ad8ff0f1fb1e58495f4a911f20cced453bd66
+size 295

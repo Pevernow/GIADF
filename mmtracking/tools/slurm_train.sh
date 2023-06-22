@@ -1,24 +1,3 @@
-#!/usr/bin/env bash
-
-set -x
-
-PARTITION=$1
-JOB_NAME=$2
-CONFIG=$3
-WORK_DIR=$4
-GPUS=$5
-GPUS_PER_NODE=${GPUS_PER_NODE:-8}
-CPUS_PER_TASK=${CPUS_PER_TASK:-2}
-SRUN_ARGS=${SRUN_ARGS:-""}
-PY_ARGS=${@:6}
-
-PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
-srun -p ${PARTITION} \
-    --job-name=${JOB_NAME} \
-    --gres=gpu:${GPUS_PER_NODE} \
-    --ntasks=${GPUS} \
-    --ntasks-per-node=${GPUS_PER_NODE} \
-    --cpus-per-task=${CPUS_PER_TASK} \
-    --kill-on-bad-exit=1 \
-    ${SRUN_ARGS} \
-    python -u $(dirname "$0")/train.py ${CONFIG} --work-dir=${WORK_DIR} --launcher="slurm" ${PY_ARGS}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c42bb4bc94a2e2baa291f15f1780a225c3992c68d333cc52aa646cee3438e900
+size 600

@@ -1,13 +1,3 @@
-attributee==0.1.5
-dotty_dict
-lap
-matplotlib
-mmcls>=0.16.0
-motmetrics
-packaging
-pandas<=1.3.5
-pycocotools<=2.0.2
-scipy<=1.7.3
-seaborn
-terminaltables
-tqdm
+version https://git-lfs.github.com/spec/v1
+oid sha256:8cf5dd65803625d38f4cb0569d99478d4f1fb94473cb70e78b0737737d296c59
+size 166

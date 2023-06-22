@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# Copyright (c) Megvii, Inc. and its affiliates.
-
-from .coco_evaluator import COCOEvaluator
-from .voc_evaluator import VOCEvaluator
+version https://git-lfs.github.com/spec/v1
+oid sha256:0c90f4d16db1e11e430286a739d16cee4d79cf309b40ba2b3ca291123c76b34a
+size 184

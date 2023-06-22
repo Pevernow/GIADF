@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# Copyright (c) Megvii Inc. All rights reserved.
-
-from .build import *
-from .darknet import CSPDarknet, Darknet
-from .losses import IOUloss
-from .yolo_fpn import YOLOFPN
-from .yolo_head import YOLOXHead
-from .yolo_pafpn import YOLOPAFPN
-from .yolox import YOLOX
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce7374212df71072c19cd8a4f46b4060d909af36b73423050ac89d4bbebb56a8
+size 319

@@ -1,15 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-import torch
-
-from mmtrack.models import TripletLoss
-
-
-def test_triplet_loss():
-    feature = torch.Tensor([[1, 1], [1, 1], [0, 0], [0, 0]])
-    label = torch.Tensor([1, 1, 0, 0])
-
-    loss = TripletLoss(margin=0.3, loss_weight=1.0)
-    assert torch.allclose(loss(feature, label), torch.tensor(0.))
-
-    label = torch.Tensor([1, 0, 1, 0])
-    assert torch.allclose(loss(feature, label), torch.tensor(1.7142))
+version https://git-lfs.github.com/spec/v1
+oid sha256:f471ccf8b8a703de9961d1e23894762f06460966c178320d06081748e09f744c
+size 472

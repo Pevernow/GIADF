@@ -1,11 +1,3 @@
-_base_ = ['./selsa_troialign_faster_rcnn_r50_dc5_7e_imagenetvid.py']
-model = dict(
-    detector=dict(
-        backbone=dict(
-            type='ResNeXt',
-            depth=101,
-            groups=64,
-            base_width=4,
-            init_cfg=dict(
-                type='Pretrained',
-                checkpoint='open-mmlab://resnext101_64x4d'))))
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4788b27f100756873263deb5e768642e83a4665185b4f4c5675007663c639a8
+size 361

@@ -1,16 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-import torch
-
-from mmtrack.models import MultiPosCrossEntropyLoss
-
-
-def test_mpce_loss():
-    costs = torch.tensor([[1, 0], [0, 1]])
-    labels = torch.tensor([[1, 1], [0, 0]])
-
-    loss = MultiPosCrossEntropyLoss(reduction='mean', loss_weight=1.0)
-    assert torch.allclose(loss(costs, labels), torch.tensor(0.))
-
-    labels = torch.Tensor([[1, 0], [0, 1]])
-    loss(costs, labels)
-    assert torch.allclose(loss(costs, labels), torch.tensor(0.31326))
+version https://git-lfs.github.com/spec/v1
+oid sha256:5306cd0d94129ddb6c44a99e8459f02808985f4200a2a11ca067cd3168e563a9
+size 517

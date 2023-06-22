@@ -1,27 +1,3 @@
-_base_ = ['./sort_faster-rcnn_fpn_4e_mot17-private-half.py']
-data_root = 'data/MOT17/'
-img_norm_cfg = dict(
-    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
-test_pipeline = [
-    dict(type='LoadImageFromFile'),
-    dict(type='LoadDetections'),
-    dict(
-        type='MultiScaleFlipAug',
-        img_scale=(1088, 1088),
-        flip=False,
-        transforms=[
-            dict(type='Resize', keep_ratio=True),
-            dict(type='RandomFlip'),
-            dict(type='Normalize', **img_norm_cfg),
-            dict(type='Pad', size_divisor=32),
-            dict(type='ImageToTensor', keys=['img']),
-            dict(type='VideoCollect', keys=['img', 'public_bboxes'])
-        ])
-]
-data = dict(
-    val=dict(
-        detection_file=data_root + 'annotations/half-val_detections.pkl',
-        pipeline=test_pipeline),
-    test=dict(
-        detection_file=data_root + 'annotations/half-val_detections.pkl',
-        pipeline=test_pipeline))
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb6a4734fd296de57adbf55a056768b3da0eca3477e19536b2bfe93dfa77fc53
+size 995

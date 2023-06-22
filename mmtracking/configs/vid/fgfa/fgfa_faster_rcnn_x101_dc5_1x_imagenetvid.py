@@ -1,11 +1,3 @@
-_base_ = ['./fgfa_faster_rcnn_r50_dc5_1x_imagenetvid.py']
-model = dict(
-    detector=dict(
-        backbone=dict(
-            type='ResNeXt',
-            depth=101,
-            groups=64,
-            base_width=4,
-            init_cfg=dict(
-                type='Pretrained',
-                checkpoint='open-mmlab://resnext101_64x4d'))))
+version https://git-lfs.github.com/spec/v1
+oid sha256:9f0aa54315ce9e4b79e9edb6ec130c16f8cdea5ccb4ef9bb6dac5e577c8513d8
+size 350

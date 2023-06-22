@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# Copyright (c) Megvii Inc. All rights reserved.
-
-# import torch first to make jit op work without `ImportError of libc10.so`
-import torch  # noqa
-
-from .jit_ops import FastCOCOEvalOp, JitOp
-
-try:
-    from .fast_coco_eval_api import COCOeval_opt
-except ImportError:  #  exception will be raised when users build yolox from source
-    pass
+version https://git-lfs.github.com/spec/v1
+oid sha256:af83c298a0851c2ff14cb4efa158b48b44ddb2916d6144d865777a910693ece1
+size 398

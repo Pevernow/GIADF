@@ -1,18 +1,3 @@
-_base_ = ['./tracktor_faster-rcnn_r50_fpn_4e_mot17-private-half.py']
-
-model = dict(
-    detector=dict(
-        init_cfg=dict(
-            type='Pretrained',
-            checkpoint=  # noqa: E251
-            'https://download.openmmlab.com/mmtracking/mot/faster_rcnn/faster-rcnn_r50_fpn_4e_mot17-ffa52ae7.pth'  # noqa: E501
-        )))
-# data
-data_root = 'data/MOT17/'
-test_set = 'test'
-data = dict(
-    train=dict(ann_file=data_root + 'annotations/train_cocoformat.json'),
-    val=dict(ann_file=data_root + 'annotations/train_cocoformat.json'),
-    test=dict(
-        ann_file=data_root + f'annotations/{test_set}_cocoformat.json',
-        img_prefix=data_root + test_set))
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd6702f3ce6996cb642fbdb8386bc04e0a00143fc7d1c9f5a21bf381288b11d9
+size 692

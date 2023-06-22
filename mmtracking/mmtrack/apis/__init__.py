@@ -1,9 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from .inference import inference_mot, inference_sot, inference_vid, init_model
-from .test import multi_gpu_test, single_gpu_test
-from .train import init_random_seed, train_model
-
-__all__ = [
-    'init_model', 'multi_gpu_test', 'single_gpu_test', 'train_model',
-    'inference_mot', 'inference_sot', 'inference_vid', 'init_random_seed'
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6d919b673c2a81bceb86ba5e0d77b97f1faecc4825c75e856f3959bb4e67b74
+size 394

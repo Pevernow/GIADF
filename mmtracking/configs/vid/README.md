@@ -1,13 +1,3 @@
-# Usage of VID configs
-
-## Training with VID configs
-
-Please refer to [Train VID models](../../docs/en/quick_run.md#examples-of-training-vid-model) to see the examples.
-
-## Testing with VID configs
-
-Please refer to [Test VID models](../../docs/en/quick_run.md#examples-of-testing-vid-model) to see the examples.
-
-## Inference with VID configs
-
-Please refer to [Inference VID models](../../docs/en/quick_run.md#inference-vid-models) to see the examples.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1a65bb1488910396056f052879b90604eb8f3d38bf936887359478029ad17eb
+size 466

@@ -1,16 +1,3 @@
-_base_ = ['./masktrack_rcnn_r50_fpn_12e_youtubevis2019.py']
-model = dict(
-    detector=dict(
-        backbone=dict(
-            type='ResNeXt',
-            depth=101,
-            groups=64,
-            base_width=4,
-            init_cfg=dict(
-                type='Pretrained',
-                checkpoint='open-mmlab://resnext101_64x4d')),
-        init_cfg=dict(
-            type='Pretrained',
-            checkpoint=  # noqa: E251
-            'https://download.openmmlab.com/mmdetection/v2.0/mask_rcnn/mask_rcnn_x101_64x4d_fpn_1x_coco/mask_rcnn_x101_64x4d_fpn_1x_coco_20200201-9352eb0d.pth'  # noqa: E501
-        )))
+version https://git-lfs.github.com/spec/v1
+oid sha256:77d44213843d47a53b444ac1f449361fabe3dac9efda114e65e8b4cd1844f610
+size 634

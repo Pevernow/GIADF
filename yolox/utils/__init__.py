@@ -1,17 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# Copyright (c) Megvii Inc. All rights reserved.
-
-from .allreduce_norm import *
-from .boxes import *
-from .checkpoint import load_ckpt, save_checkpoint
-from .compat import meshgrid
-from .demo_utils import *
-from .dist import *
-from .ema import *
-from .logger import WandbLogger, setup_logger
-from .lr_scheduler import LRScheduler
-from .metric import *
-from .model_utils import *
-from .setup_env import *
-from .visualize import *
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0b36a41d445de6f0eb9927d9b5c69088643bae692990578c7470c27b004175e
+size 492

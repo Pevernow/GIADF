@@ -1,15 +1,3 @@
-TRAIN_REID = True
-_base_ = ['./resnet50_b32x8_MOT17.py']
-model = dict(reid=dict(head=dict(num_classes=368)))
-# data
-data_root = 'data/MOT15/'
-data = dict(
-    train=dict(
-        data_prefix=data_root + 'reid/imgs',
-        ann_file=data_root + 'reid/meta/train_80.txt'),
-    val=dict(
-        data_prefix=data_root + 'reid/imgs',
-        ann_file=data_root + 'reid/meta/val_20.txt'),
-    test=dict(
-        data_prefix=data_root + 'reid/imgs',
-        ann_file=data_root + 'reid/meta/val_20.txt'))
+version https://git-lfs.github.com/spec/v1
+oid sha256:779b3459289393193612172fbd366613d6a67f2836a3040fb682778061b604c1
+size 514

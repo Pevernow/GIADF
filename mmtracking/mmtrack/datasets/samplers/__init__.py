@@ -1,7 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from .quota_sampler import DistributedQuotaSampler
-from .video_sampler import DistributedVideoSampler, SOTVideoSampler
-
-__all__ = [
-    'DistributedVideoSampler', 'SOTVideoSampler', 'DistributedQuotaSampler'
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:b42af975bd7eccac1b565d7af5b8120813353558b541a6f1608a13e1bea00a6a
+size 265

@@ -1,3 +1,3 @@
-_base_ = ['./siamese_rpn_r50_20e_lasot.py']
-optimizer_config = dict(type='SiameseRPNFp16OptimizerHook')
-fp16 = dict(loss_scale=512.)
+version https://git-lfs.github.com/spec/v1
+oid sha256:93dd9a12e6acb1afff30fc8171e8ed83c41e8b9b1a236246673d89a0d4258437
+size 136

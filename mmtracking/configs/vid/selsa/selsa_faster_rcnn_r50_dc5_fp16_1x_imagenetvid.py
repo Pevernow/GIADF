@@ -1,2 +1,3 @@
-_base_ = ['./selsa_faster_rcnn_r50_dc5_1x_imagenetvid.py']
-fp16 = dict(loss_scale=512.)
+version https://git-lfs.github.com/spec/v1
+oid sha256:acabd6c60c3daadd0dfcb44cca38491db297449aaca20d75b8c87642ff1d672f
+size 90

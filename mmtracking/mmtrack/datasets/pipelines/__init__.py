@@ -1,25 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from mmdet.datasets.builder import PIPELINES
-
-from .formatting import (CheckPadMaskValidity, ConcatSameTypeFrames,
-                         ConcatVideoReferences, ReIDFormatBundle,
-                         SeqDefaultFormatBundle, ToList, VideoCollect)
-from .loading import (LoadDetections, LoadMultiImagesFromFile,
-                      SeqLoadAnnotations)
-from .processing import MatchInstances, PairSampling, TridentSampling
-from .transforms import (SeqBboxJitter, SeqBlurAug, SeqBrightnessAug,
-                         SeqColorAug, SeqCropLikeSiamFC, SeqCropLikeStark,
-                         SeqGrayAug, SeqNormalize, SeqPad,
-                         SeqPhotoMetricDistortion, SeqRandomCrop,
-                         SeqRandomFlip, SeqResize, SeqShiftScaleAug)
-
-__all__ = [
-    'PIPELINES', 'LoadMultiImagesFromFile', 'SeqLoadAnnotations', 'SeqResize',
-    'SeqNormalize', 'SeqRandomFlip', 'SeqPad', 'SeqDefaultFormatBundle',
-    'VideoCollect', 'CheckPadMaskValidity', 'ConcatVideoReferences',
-    'LoadDetections', 'MatchInstances', 'SeqRandomCrop',
-    'SeqPhotoMetricDistortion', 'SeqCropLikeSiamFC', 'SeqShiftScaleAug',
-    'SeqBlurAug', 'SeqColorAug', 'ToList', 'ReIDFormatBundle', 'SeqGrayAug',
-    'SeqBrightnessAug', 'SeqBboxJitter', 'SeqCropLikeStark', 'TridentSampling',
-    'ConcatSameTypeFrames', 'PairSampling'
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:d07c121bf64175683fc48862f71df5eb4e127ecf3b731d5a3dce7135a7c38042
+size 1405

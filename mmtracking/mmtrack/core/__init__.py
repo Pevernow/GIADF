@@ -1,9 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from .anchor import *  # noqa: F401, F403
-from .bbox import *  # noqa: F401, F403
-from .evaluation import *  # noqa: F401, F403
-from .hook import *  # noqa: F401, F403
-from .motion import *  # noqa: F401, F403
-from .optimizer import *  # noqa: F401, F403
-from .track import *  # noqa: F401, F403
-from .utils import *  # noqa: F401, F403
+version https://git-lfs.github.com/spec/v1
+oid sha256:9116c17a15379d4a04776a06bdd5df50efff6800a0501b190c0dd57ddcb1723f
+size 394

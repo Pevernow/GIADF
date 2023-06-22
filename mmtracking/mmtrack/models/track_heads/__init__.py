@@ -1,13 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from .quasi_dense_embed_head import QuasiDenseEmbedHead
-from .quasi_dense_track_head import QuasiDenseTrackHead
-from .roi_embed_head import RoIEmbedHead
-from .roi_track_head import RoITrackHead
-from .siamese_rpn_head import CorrelationHead, SiameseRPNHead
-from .stark_head import CornerPredictorHead, StarkHead
-
-__all__ = [
-    'CorrelationHead', 'SiameseRPNHead', 'RoIEmbedHead', 'RoITrackHead',
-    'StarkHead', 'CornerPredictorHead', 'QuasiDenseEmbedHead',
-    'QuasiDenseTrackHead'
-]
+version https://git-lfs.github.com/spec/v1
+oid sha256:487d7b64956a5165d97627e7dc7810b360a690530d34e7ab1ccd7c6d0797af08
+size 549

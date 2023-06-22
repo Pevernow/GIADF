@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-
-CONFIG=$1
-GPUS=$2
-PORT=${PORT:-29500}
-
-PYTHONPATH="$(dirname $0)/..":$PYTHONPATH \
-python -m torch.distributed.launch --nproc_per_node=$GPUS --master_port=$PORT \
-    $(dirname "$0")/mot_param_search.py $CONFIG --launcher pytorch ${@:3}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f69e5c20d95e8f135732f206d11a87d2753810a0b7d91b7dac02d1bd4b84996
+size 267

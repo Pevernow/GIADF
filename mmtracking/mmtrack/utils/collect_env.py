@@ -1,17 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from mmcv.utils import collect_env as collect_base_env
-from mmcv.utils import get_git_hash
-
-import mmtrack
-
-
-def collect_env():
-    """Collect the information of the running environments."""
-    env_info = collect_base_env()
-    env_info['MMTracking'] = mmtrack.__version__ + '+' + get_git_hash()[:7]
-    return env_info
-
-
-if __name__ == '__main__':
-    for name, val in collect_env().items():
-        print(f'{name}: {val}')
+version https://git-lfs.github.com/spec/v1
+oid sha256:124363bf38150a485a122c05fb1f39c8859158404e5c764195f0c9248df9e418
+size 491

@@ -1,7 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-from .base_reid import BaseReID
-from .fc_module import FcModule
-from .gap import GlobalAveragePooling
-from .linear_reid_head import LinearReIDHead
-
-__all__ = ['BaseReID', 'GlobalAveragePooling', 'LinearReIDHead', 'FcModule']
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8301d76fc49a3d53b3f435ae22ebb9d03f9f627e2aaf855af4b78df1d95913a
+size 280

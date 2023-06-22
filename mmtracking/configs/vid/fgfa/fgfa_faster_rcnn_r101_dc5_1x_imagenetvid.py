@@ -1,7 +1,3 @@
-_base_ = ['./fgfa_faster_rcnn_r50_dc5_1x_imagenetvid.py']
-model = dict(
-    detector=dict(
-        backbone=dict(
-            depth=101,
-            init_cfg=dict(
-                type='Pretrained', checkpoint='torchvision://resnet101'))))
+version https://git-lfs.github.com/spec/v1
+oid sha256:74615aebdf99d08c605703523b12b83900510256704dfb74e50264ae4de58e1f
+size 247

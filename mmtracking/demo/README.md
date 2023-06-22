@@ -1,3 +1,3 @@
-# Demo
-
-Please refer to the inference of [VID](../docs/en/quick_run.md#inference-vid-models), [MOT](../docs/en/quick_run.md#inference-motvis-models), [SOT](../docs/en/quick_run.md#inference-sot-models) and [VIS](../docs/en/quick_run.md#inference-motvis-models) to run demos.
+version https://git-lfs.github.com/spec/v1
+oid sha256:356a9c8ffbfb2af23e99a4ef9f8bb42b9d8aec62650e9f82787b1309a3deb448
+size 278

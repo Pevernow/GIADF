@@ -1,5 +1,3 @@
-myst_parser
--e git+https://github.com/open-mmlab/pytorch_sphinx_theme.git#egg=pytorch_sphinx_theme
-sphinx==4.0.2
-sphinx-copybutton
-sphinx_markdown_tables
+version https://git-lfs.github.com/spec/v1
+oid sha256:87bc72566ff88810357cf179aa0963f4f50a304df4c145aa161edf84a2d055f8
+size 159

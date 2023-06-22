@@ -1,5 +1,3 @@
-mmcls
-mmcv
-mmdet
-torch
-torchvision
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d8259ba6ddc14455abad2e7271df34ee75fd5b467130baf2f27a0fbc3ec1a87
+size 40

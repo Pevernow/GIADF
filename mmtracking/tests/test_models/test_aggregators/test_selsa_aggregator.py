@@ -1,16 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-import torch
-
-from mmtrack.models.aggregators import SelsaAggregator
-
-
-def test_selsa_aggregator():
-    """Test selsa_aggregator."""
-    # Test embed_aggregator forward
-    model = SelsaAggregator(in_channels=16, num_attention_blocks=4)
-    model.train()
-
-    target_x = torch.randn(2, 16)
-    ref_x = torch.randn(4, 16)
-    agg_x = model(target_x, ref_x)
-    assert agg_x.shape == target_x.shape
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb080a9b7775644446de89c3011bb83fdd88f88b34aa0901d92cba1cfe838e27
+size 461

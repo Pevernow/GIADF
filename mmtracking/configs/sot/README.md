@@ -1,13 +1,3 @@
-# Usage of SOT configs
-
-## Training with SOT configs
-
-Please refer to [Train SOT models](../../docs/en/quick_run.md#examples-of-training-sot-model) to see the examples.
-
-## Testing with SOT configs
-
-Please refer to [Test SOT models](../../docs/en/quick_run.md#examples-of-testing-sot-model) to see the examples.
-
-## Inference with SOT configs
-
-Please refer to [Inference SOT models](../../docs/en/quick_run.md#inference-sot-models) to see the examples.
+version https://git-lfs.github.com/spec/v1
+oid sha256:cefacd9522ae0bb28842356fbae5ce045db0e8021e75ffb0a3e9a2f649885f69
+size 466

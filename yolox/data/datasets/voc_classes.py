@@ -1,27 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# Copyright (c) Megvii, Inc. and its affiliates.
-
-# VOC_CLASSES = ( '__background__', # always index 0
-VOC_CLASSES = (
-    "aeroplane",
-    "bicycle",
-    "bird",
-    "boat",
-    "bottle",
-    "bus",
-    "car",
-    "cat",
-    "chair",
-    "cow",
-    "diningtable",
-    "dog",
-    "horse",
-    "motorbike",
-    "person",
-    "pottedplant",
-    "sheep",
-    "sofa",
-    "train",
-    "tvmonitor",
-)
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba11b9dcff4685815edf1dd7096b1d66abd92affd2f6ae5691e773d9711d8cc7
+size 469

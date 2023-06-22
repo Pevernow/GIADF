@@ -1,8 +1,3 @@
-USE_MMDET = True
-_base_ = ['./faster-rcnn_r50_fpn_4e_mot17-half.py']
-# data
-data_root = 'data/MOT17/'
-data = dict(
-    train=dict(ann_file=data_root + 'annotations/train_cocoformat.json'),
-    val=dict(ann_file=data_root + 'annotations/train_cocoformat.json'),
-    test=dict(ann_file=data_root + 'annotations/train_cocoformat.json'))
+version https://git-lfs.github.com/spec/v1
+oid sha256:80bd4673b6162015d22cd1001610cc9d207d90f347b987146a1579fefef212ed
+size 342

@@ -1,33 +1,3 @@
-# Copyright (c) OpenMMLab. All rights reserved.
-import torch
-import torch.nn.functional as F
-
-
-def embed_similarity(key_embeds,
-                     ref_embeds,
-                     method='dot_product',
-                     temperature=-1):
-    """Calculate feature similarity from embeddings.
-
-    Args:
-        key_embeds (Tensor): Shape (N1, C).
-        ref_embeds (Tensor): Shape (N2, C).
-        method (str, optional): Method to calculate the similarity,
-            options are 'dot_product' and 'cosine'. Defaults to
-            'dot_product'.
-        temperature (int, optional): Softmax temperature. Defaults to -1.
-
-    Returns:
-        Tensor: Similarity matrix of shape (N1, N2).
-    """
-    assert method in ['dot_product', 'cosine']
-
-    if method == 'cosine':
-        key_embeds = F.normalize(key_embeds, p=2, dim=1)
-        ref_embeds = F.normalize(ref_embeds, p=2, dim=1)
-
-    similarity = torch.mm(key_embeds, ref_embeds.T)
-
-    if temperature > 0:
-        similarity /= float(temperature)
-    return similarity
+version https://git-lfs.github.com/spec/v1
+oid sha256:0c2b25e7869bbd0a8899cd5d0c5b23c69bf900d09cf357e04de194c9ebf808b7
+size 1065
