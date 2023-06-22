@@ -19,13 +19,13 @@
 ### 注意
 原神需要以 **1920x1080** 的分辨率运行，不支持其他分辨率。可以窗口化运行。
 
-#拉取
+# 拉取
 ```bash
 git clone https://github.com/Pevernow/GIADF.git
 ```
 ## 安装
 首先安装基本依赖
-#####不包括Pytorch,请自行安装合适的版本
+##### 不包括Pytorch,请自行安装合适的版本
 ```bash
 pip install -r requirements.txt
 ```
