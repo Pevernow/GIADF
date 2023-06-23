@@ -1,5 +1,67 @@
 # Genshin Impact Auto Domain Fighter(GIADF)
+## introduce
+This project combines target detection, target tracking models, and some traditional cv algorithms.
+Automatically refresh the original mysterious environment, no manual operation is required in the whole process.
 
+The target detection part constructs a monster target detection data set, uses a semi-supervised method to learn (label 5%), and labels pseudo-labels for the entire data set.
+The original author's data set was closed 10 months ago, which means that this project only supports Daozuma, and does not support Sumeru and Fontaine Domain for the time being (it may be updated later).
+
+This fork removes useless functions, and replaces the default team to increase damage. (The automatic general attack of skirmishers is very far away, and the range damage)
+Packaged weights, resolved and simplified dependencies, improved usage instructions.
+
+The biggest problem at present is not being able to avoid damage. There is no way, it is limited by the project structure.
+The ability to resist interruption can only be improved by brushing the shield, otherwise the combat strategy will be affected.
+
+There are plans to port to mmengine2.0 for higher accuracy and efficiency (charging)
+Thanks to the original author [SchrödingerのRainbow Cat (7eu7d7)](https://space.bilibili.com/8205465)
+
+### Notice
+Genshin Impact requires **1920x1080** resolution to run, other resolutions are not supported. It can be run in windowed mode.
+
+# Pull
+```bash
+git clone https://github.com/Pevernow/GIADF.git
+```
+## Install
+First install the basic dependencies
+##### Does not include Pytorch, please install the appropriate version by yourself
+```bash
+pip install -r requirements.txt
+```
+
+The project has its own weight and can be run directly
+## Combat strategy configuration
+The default team is 1 Skirmisher, 2 Xingqiu, 3 Noelle, 4 Barbara (please team up in order)
+The combat strategy configuration file is in the folder ```control/script/```, there are currently two examples.
+Multiple combat strategies can be configured in each file, and a certain cooling time is set for each strategy.
+The program will run the strategy that cools down first according to the priority from top to bottom.
+
+If the policy adds
+```yaml
+type: break
+```
+field, this strategy has the highest priority, and it will be executed first as long as it is cooled down, and other running strategies can be interrupted.
+
+Supported commands
+```
+switch 4 #Switch to role 4
+delay i #wait for i seconds
+key e #Tap the keyboard key e
+key down e #Press the keyboard key e and hold
+key up e #lift up the keyboard key e
+mouse l i #Press the left button for i seconds
+mouse r i #Press the right button for i seconds
+```
+
+## Tutorial
+Start the command line in administrator mode and run the program:
+```bash
+python auto_domain_fighter.py --cfg control/script/hutao_shatang.yaml
+```
+Can be replaced with your own team battle strategy file.
+
+Start Genshin Impact, select and enter the domain you want to attack, click anywhere to hide the domain pop-up window, and then press the T key. After a few minutes, you will automatically enter the award receiving interface (the pathfinding has some defects and may cause problems , please wait patiently for one minute or manually go to claim the prize).
+Is it very similar to the automatic copybook of the Hoki:Star Rail? Click to start, click t, wait a few minutes, and get a reward.
 ## 介绍
 本项目融合了目标检测，目标跟踪模型，以及一些传统cv算法。
 全自动刷原神秘境，全程无需人工操作。
